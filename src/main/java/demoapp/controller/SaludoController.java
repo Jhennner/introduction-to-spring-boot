@@ -15,7 +15,8 @@ public class SaludoController {
     private SaludoService service;
 
     @RequestMapping("/saludo/{nombre}")
-    public @ResponseBody String saludo(@PathVariable(value="nombre") String nombre) {
+    public @ResponseBody String saludo(@PathVariable(value="nombre") String nombre)
+    {
         return service.saluda(nombre);
     }
 

@@ -17,12 +17,14 @@ public class SaludoControllerForm {
 
     @GetMapping("/saludoform")
     // Hay que declarar un parámetro con el tipo usado en el modelo del formulario (UserData)
-    public String saludoForm(UserData userData) {
+    public String saludoForm(UserData userData)
+    {
         return "formRegistro";
     }
 
     @PostMapping("/saludoform")
-    public String checkPersonInfo(@ModelAttribute @Valid UserData userData, BindingResult bindingResult, Model model) {
+    public String checkPersonInfo(@ModelAttribute @Valid UserData userData, BindingResult bindingResult, Model model)
+    {
         if (bindingResult.hasErrors()) {
             return "formRegistro";
         }

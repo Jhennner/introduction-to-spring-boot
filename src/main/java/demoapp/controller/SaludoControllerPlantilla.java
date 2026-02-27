@@ -15,7 +15,8 @@ public class SaludoControllerPlantilla {
     private SaludoService service;
 
     @RequestMapping("/saludoplantilla/{nombre}")
-    public String saludo(@PathVariable(value="nombre") String nombre, Model model) {
+    public String saludo(@PathVariable(value="nombre") String nombre, Model model)
+    {
         // Se añade la respuesta a la clave 'mensaje' que se usa
         // en la plantilla
         model.addAttribute("mensaje", service.saluda(nombre));

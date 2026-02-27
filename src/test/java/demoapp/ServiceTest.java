@@ -13,12 +13,14 @@ public class ServiceTest {
     SaludoService saludo;
 
     @Test
-    public void contexLoads() throws Exception {
+    public void contexLoads() throws Exception
+    {
         assertThat(saludo).isNotNull();
     }
 
     @Test
-    public void serviceSaludo() throws Exception {
+    public void serviceSaludo() throws Exception
+    {
         assertThat(saludo.saluda("Juan")).isEqualTo("Hola Juan");
     }
 }
