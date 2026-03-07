@@ -19,7 +19,7 @@ public class SaludoControllerPlantilla {
     {
         // Se añade la respuesta a la clave 'mensaje' que se usa
         // en la plantilla
-        model.addAttribute("mensaje", service.saluda(nombre));
+            model.addAttribute("mensaje", service.saluda(nombre));
         // Se llama a la plantilla 'saludo.html'
         return "saludo";
     }
