@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a3422b4-e81b-4ddb-aad7-5d4ba55c2b87" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demoapp/controller/SaludoControllerPlantilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demoapp/controller/SaludoControllerPlantilla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-demoapp.MockMvcTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-demoapp.MockMvcTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-demoapp.MockServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-demoapp.MockServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-demoapp.ServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-demoapp.ServiceTest.xml" afterDir="false" />
