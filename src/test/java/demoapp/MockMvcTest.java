@@ -25,7 +25,7 @@ public class MockMvcTest {
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello World")));
+                .andExpect(content().string(containsString("Hello World, mi nombre es Jhener")));
     }
 
     // Podemos hacer también una petición POST y pasar los datos
@@ -35,6 +35,6 @@ public class MockMvcTest {
         this.mockMvc.perform(post("/saludoform")
                 .param("nombre", "Juan"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello Juan")));
+                .andExpect(content().string(containsString("Hola Juan")));
     }
 }
