@@ -30,3 +30,7 @@ Una vez lanzada la aplicación puedes abrir un navegador y probar los distintos 
 - [http://localhost:8080/saludo/Pepito](http://localhost:8080/saludo/Pepito)
 - [http://localhost:8080/saludoplantilla/Pepito](http://localhost:8080/saludoplantilla/Pepito)
 - [http://localhost:8080/saludoform](http://localhost:8080/saludoform)
+
+La imagen de la aplicación esta en el respositorio del Docker Hub
+que podrá acceder por:
+- [https://hub.docker.com/r/jheneralbarado/spring-boot-demoapp](https://hub.docker.com/r/jheneralbarado/spring-boot-demoapp)
