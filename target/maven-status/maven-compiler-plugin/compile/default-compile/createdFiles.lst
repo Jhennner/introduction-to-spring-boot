@@ -3,8 +3,11 @@ demoapp\service\SaludoService.class
 demoapp\controller\SaludoControllerForm.class
 demoapp\Application.class
 demoapp\controller\UserData.class
+demoapp\service\CalculadoraService.class
 demoapp\controller\SaludoController.class
 demoapp\controller\PalabraData.class
 demoapp\service\PalindromoService.class
 demoapp\controller\HomeController.class
+demoapp\controller\NumeroData.class
+demoapp\controller\CalculadoraController.class
 demoapp\controller\PalindromoController.class
