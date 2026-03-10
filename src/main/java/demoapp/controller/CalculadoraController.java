@@ -60,4 +60,22 @@ public class CalculadoraController {
         model.addAttribute("mensaje", estado);
         return "cuadradoForm";
     }
+
+    /*
+        Operaciones: suma,resta, multiplicacion, divion.
+     */
+    @GetMapping("/calcular")
+    public String calculadoraForm(Model model) {
+        model.addAttribute("calcularData", new CalcularData());
+        return "calcularForm";
+    }
+
+    @PostMapping("/calcular")
+    public String calcular(@ModelAttribute("calcularData") @Valid CalcularData data, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) return "calcularForm";
+
+        model.addAttribute("resultado",
+                service.calcular(data.getNum1(), data.getNum2(), data.getOperacion()));
+        return "calcularForm";
+    }
 }

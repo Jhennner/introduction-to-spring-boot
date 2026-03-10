@@ -8,6 +8,7 @@ demoapp\service\CalculadoraService.class
 demoapp\controller\SaludoController.class
 demoapp\controller\PalabraData.class
 demoapp\service\PalindromoService.class
+demoapp\controller\CalcularData.class
 demoapp\controller\HomeController.class
 demoapp\controller\NumeroData.class
 demoapp\controller\CalculadoraController.class
