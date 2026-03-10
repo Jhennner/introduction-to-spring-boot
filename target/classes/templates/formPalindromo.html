@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DemoAPP</title>
+</head>
+<body>
+    <form th:action="@{/palindromo}" th:object="${palabraData}" method="post">
+
+        <label>Palabra:</label>
+        <input type="text" th:field="*{palabra}" /></td><br>
+        <p th:if="${#fields.hasErrors('palabra')}" th:errors="*{palabra}"></p><br>
+        <p th:if="${mensaje}" th:text="${mensaje}"></p>
+        <button type="submit">Comprobar</button>
+
+    </form>
+</body>
+</html>
