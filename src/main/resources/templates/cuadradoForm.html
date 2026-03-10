@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DemoAPP - Número Cuadrado</title>
+</head>
+<body>
+<form th:action="@{/numerocuadrado}" th:object="${cuadradoData}" method="post">
+
+    <label>Primer número:</label>
+    <input type="number" th:field="*{num1}" /><br>
+    <p th:if="${#fields.hasErrors('num1')}" th:errors="*{num1}"></p>
+
+    <label>Segundo número:</label>
+    <input type="number" th:field="*{num2}" /><br>
+    <p th:if="${#fields.hasErrors('num2')}" th:errors="*{num2}"></p>
+
+    <button type="submit">Comprobar</button>
+</form>
+
+<p th:if="${mensaje}" th:text="${mensaje}"></p>
+</body>
+</html>

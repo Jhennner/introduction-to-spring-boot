@@ -40,4 +40,24 @@ public class CalculadoraController {
         model.addAttribute("mensaje", comprobar);
         return "parForm";
     }
+
+     /*
+         Numero cuadrado Controller. A partir de aqui son Controles de numero cuadrado
+    */
+    @GetMapping("/numerocuadrado")
+    public String cuadradoForm(Model model) {
+        model.addAttribute("cuadradoData", new CuadradoData());
+        return "cuadradoForm";
+    }
+
+    @PostMapping("/numerocuadrado")
+    public String checkNumsCuadrado(@ModelAttribute("cuadradoData") @Valid CuadradoData data, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) {return "cuadradoForm";}
+
+        String estado = "";
+        if(service.isCuadrado(data.getNum1(), data.getNum2())) estado = "El segundo número es el cuadrado del primero.";
+        else estado="El segundo número NO es el cuadrado del primero.";
+        model.addAttribute("mensaje", estado);
+        return "cuadradoForm";
+    }
 }
